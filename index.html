@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Project</title>
+</head>
+<style>
+	:root {
+		--dark-bg: #2d2d2d;
+		--light-purple: #e0b8f1; 
+		--neon-purple: #8721b3; 
+		--text-dark: #3a3a3a;
+		--text-highlight: #8721b3; 
+		--white: #ffffff;
+		--light-gray: #fdfcff; 
+		--border-color: #dee2e6;
+	}
+
+	body {
+		font-family: DM Sans, sans-serif;
+		margin: 0;
+		background-color: var(--light-gray);
+	}
+	
+	.top-header {
+		margin: 0;
+		background-color: #e0b8f1;
+		padding: 10px 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	img{
+		width: 100px;
+	}
+	
+	.nav-links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		gap: 40px;
+	}
+
+	.nav-links a {
+		color: black;
+		text-decoration: none;
+		padding: 3px;
+		font-size: 27px;
+	}
+
+	.hero-section {
+		display: flex;
+		text-align: left;
+		padding: 50px 350px;
+		gap: 150px;
+		align-content: center;
+	}
+
+	.id-image {
+		align-content: right;
+	}
+
+	.id-photo {
+		width: 150px;
+		height: auto;
+		margin: 1px;
+		border-radius: 20px;
+	}
+	
+	.hero-section h1 {
+		color: var(--text-dark);
+		font-family: 'DM Sans', sans-serif;
+		font-size: 35px;
+		margin: 10px 0 5px 0;
+		font-weight: 700;
+	}
+	
+	.text-highlight {
+		font-size: 70px;
+		color: var(--text-highlight);
+	}
+
+	.hero-section p {
+		color: #555;
+		margin: 0;
+		font-size: 35px;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+
+	
+	.section-title {
+		background-color: var(--neon-purple);
+		color: var(--white);
+		font-family: 'DM Sans', sans-serif;
+		align-content: center;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		margin-bottom: 30px;
+		padding: 13px;
+		margin: 100;
+		border: 100px;
+		border-radius: 5px;
+	}
+
+	.about-me p {
+		text-align: left;
+		line-height: 1.5;
+		color: black;
+		font-size: 19px;
+	}
+
+	h4 {
+		color: var(--neon-purple);
+		font-size: 25px;
+		margin: 0;
+	}
+
+	.skills-flex {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		margin-top: 20px;
+		align-items: center;
+        margin-bottom: 40px; 
+	}
+
+	.skills {
+		font-size: 19px;
+	}
+
+	.skills b{
+		color: var(--neon-purple);
+		font-size: 23px;
+	}
+	
+	.form-container {
+		background-color: var(--light-purple);
+		padding: 40px;
+		border-radius: 15px;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+		border: 1px solid var(--border-color);
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+	}
+	
+	.form-group > label {
+		display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #42025d;
+	}
+		
+	.form-group div {
+		display: block; 
+	}
+
+	input[type="text"], input[type="email"], textarea, select {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid var(--border-color);
+		border-radius: 8px;
+		box-sizing: border-box;
+		font-size: 1em;
+	}
+
+	.option-label {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 20px;
+        margin-bottom: 10px; 
+        font-weight: normal;
+    }
+    .option-label input {
+        margin-right: 8px;
+        width: auto;
+    }
+
+	input[type="submit"] {
+		background: var(--neon-purple);
+		color: var(--white);
+		padding: 12px 410px;
+		cursor: pointer;
+		border: none;
+		transition: background 0.3s;
+		border-radius: 8px;
+		width: auto;
+		display: block;
+		margin: 20px auto 0;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+	.footer {
+		background-color: var(--dark-bg);
+		color: var(--white);
+		text-align: center;
+		padding: 20px;
+		margin-top: 40px;
+	}
+
+</style>
+<body>
+	<header class="top-header">
+		<div class="logo"> <img src="ALYSHALOGO.png"> </div>
+		<ul class="nav-links">
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#skills">My Skills</a></li>
+			<li><a href="#contact"><b>Contact Me</b></a></li>
+		</ul>
+	</header>
+
+	<div class="hero-section"> 
+	
+		<p>Hi! My name is <br> <b><span class="text-highlight">Alysha Aguilar</span></b> <br> An Aspiring Web Developer</p>	
+		<div class="id-image"><img src="ALYSHAID.jpg" class="id-photo"></div>	
+	</div>
+
+
+	<div class="container">
+		<div id="about">
+			<h2 class="section-title">About Me</h2>
+			<div class="about-me">
+				<h4>About Me</h4>
+				<p>Hello! My name is Alysha Francesca P. Aguilar, but you can call me Lacey. Some of my hobbies include baking, biking, singing and playing with my pets. My interests include traveling, watching TV Shows, and dressing up. I am kind, hardworking, and a team player.</p><br>
+				<h4>As a Student</h4>
+                <p>I am currently studying as a Grade 9 student at O.B. Montessori Center in Angeles. As an OBMC student, I am currently part of the Glee Club and the Science Club. I also enjoy taking part in other activities such as Public Speaking and more. Aside from that, some of my favorite subjects are Math and I.C.T., especially because the teachers are so fun! </p>
+			</div>
+		</div>
+
+		<div id="skills" style="margin-top: 40px;">
+			<h2 class="section-title">My Skills, Hobbies, and Achievements</h2>
+			<div class="skills">
+				<ol>
+					<b><li>My Skills</li></b>
+					<ul>
+						<li>Leadership and Teamwork</li>
+						<li>Organization</li>
+						<li>Public Speaking</li>
+						<li>Scientific Curiosity</li>
+					</ul><br>
+					<b><li>My Hobbies</li></b>
+					<ul>
+						<li>Baking</li>
+						<li>Playing with my Dogs</li>
+						<li>Singing</li>
+						<li>Traveling</li>
+					</ul><br>
+					<b><li>My Achievements in O.B.</li></b>
+					<ul>
+						<li>Class Mayor: Grade 7 and 9</li>
+						<li>Poetry and Public Speaking</li>
+							<dd>- Participation (CASA)</dd>
+							<dd>- 3rd Place (Grade 3)</dd>
+							<dd>- 3rd Place (Grade 5)</dd>
+							<dd>- Participation (Grade 6-7)</dd>
+							<dd>- 2nd Place (Grade 8)</dd>
+						<li>Good Grades</li>
+					</ul>
+				</ol>				
+			</div>
+		</div>
+		
+		<div id="contact" style="margin-top: 40px;">
+			<h2 class="section-title">Contact Me</h2>
+			<div class="form-container">
+				<form action="#" method="POST">
+					<div class="form-group">
+						<label for="name">Full Name:</label>
+						<input type="text" id="name" name="name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email">
+					</div>
+					<div class="form-group">
+						<label>How did you find my portfolio?</label>
+						<div>
+							<label class="option-label"><input type="radio" name="find-source" value="facebook"> Instagram</label>
+							<label class="option-label"><input type="radio" name="find-source" value="google"> Google</label>
+							<label class="option-label"><input type="radio" name="find-source" value="friends"> Friends</label>
+							<label class="option-label"><input type="radio" name="find-source" value="other"> Other</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>What can I help you with?</label>
+						<div>
+							<label class="option-label"><input type="checkbox" name="interests" value="web-development"> Web Development</label>
+							<label class="option-label"><input type="checkbox" name="interests" value="listening-music"> Portfolio Review</label>
+							<label class="option-label"><input type="checkbox" name="interests" value="collaboration"> Collaboration</label>
+                            <label class="option-label"><input type="checkbox" name="interests" value="my-projects"> My Projects</label>
+                            <label class="option-label"><input type="checkbox" name="interests" value="other"> Other</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="rating">How would you rate my portfolio?</label>
+						<select id="rating" name="rating">
+							<option value="">-- Select Rating --</option>
+							<option value="5">Excellent</option>
+							<option value="4">Good</option>
+							<option value="3">Average</option>
+							<option value="2">Poor</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="message">Additional comments or questions:</label>
+						<textarea id="message" name="message" rows="3"></textarea>
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>&copy; 2025 Alysha Aguilar Student. All rights reserved.</p>
+	</div>
+</body>
+</html>
